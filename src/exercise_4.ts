@@ -1,7 +1,7 @@
 //  Asynchronous Functions and Promises
 
 // Task 1
-async function getUser(url: string): Promise<any> {
+async function getUser(url: string): Promise<object> {
     try {
         const response = await fetch(url);
 

@@ -1,17 +1,17 @@
 "use strict";
 //  Basic Types and Functions
 // Task 1
-var userName = "Jon";
-var age = 30;
-var isProgrammer = true;
-var getName = function (name) {
+const userName = "Jon";
+const age = 30;
+const isProgrammer = true;
+const getName = (name) => {
     return name;
 };
-var getAge = function (age) {
+const getAge = (age) => {
     return age;
 };
-var getProgramerStatus = function (isProgrammer) {
+const getProgramerStatus = (isProgrammer) => {
     return isProgrammer;
 };
-console.log("Name: " + getName(userName) + "\nAge: " + getAge(age) + "\nIs Programmer: " + getProgramerStatus(isProgrammer));
+console.log(`Name: ${getName(userName)}\nAge: ${getAge(age)}\nIs Programmer: ${getProgramerStatus(isProgrammer)}`);
 //# sourceMappingURL=exercise_1.js.map

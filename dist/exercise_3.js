@@ -10,16 +10,16 @@ var UserRole;
 function getRoleMessage(role) {
     switch (role) {
         case UserRole.Admin:
-            return "You are an admin.";
+            return `You are an ${UserRole.Admin}.`;
         case UserRole.User:
-            return "You are a user.";
+            return `You are an ${UserRole.User}.`;
         case UserRole.Guest:
-            return "You are a guest.";
+            return `You are an ${UserRole.Guest}.`;
         default:
             return "Unknown role.";
     }
 }
-var userRole = "Admin";
-var userRoleWithTypeAssertions = userRole;
+let userRole = "Admin";
+let userRoleWithTypeAssertions = userRole;
 console.log(getRoleMessage(userRoleWithTypeAssertions));
 //# sourceMappingURL=exercise_3.js.map

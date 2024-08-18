@@ -2,18 +2,18 @@
 // Task 1
 var Color;
 (function (Color) {
-    Color[Color["Red"] = 0] = "Red";
-    Color[Color["Green"] = 1] = "Green";
-    Color[Color["Blue"] = 2] = "Blue";
+    Color["Red"] = "Red";
+    Color["Green"] = "Green";
+    Color["Blue"] = "Blue";
 })(Color || (Color = {}));
 var getColor = function (color) {
     switch (color) {
         case Color.Red:
-            return "Red";
+            return Color.Red;
         case Color.Green:
-            return "Green";
+            return Color.Green;
         case Color.Blue:
-            return "Blue";
+            return Color.Blue;
         default:
             return "Unknown color";
     }

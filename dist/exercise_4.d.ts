@@ -1,1 +1,1 @@
-declare function getUser(url: string): Promise<any>;
+declare function getUser(url: string): Promise<object>;

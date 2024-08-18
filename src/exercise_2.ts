@@ -2,19 +2,19 @@
 
 // Task 1
 enum Color {
-    Red,
-    Green,
-    Blue,
+    Red = "Red",
+    Green = "Green",
+    Blue = "Blue",
 }
 
 const getColor = (color: Color): string => {
     switch (color) {
         case Color.Red:
-            return "Red"
+            return Color.Red
         case Color.Green:
-            return "Green"
+            return Color.Green
         case Color.Blue:
-            return "Blue"
+            return Color.Blue
         default:
             return "Unknown color"
     }
@@ -37,9 +37,9 @@ class CarFirms implements Car {
     year: number;
 
     constructor(make: string, model: string, year: number) {
-        this.make = make,
-        this.model = model,
-        this.year = year
+            this.make = make,
+            this.model = model,
+            this.year = year
     }
 
     carDetails(): void {

@@ -10,11 +10,11 @@ enum UserRole {
 function getRoleMessage(role: UserRole): string {
     switch (role) {
         case UserRole.Admin:
-            return "You are an admin.";
+            return `You are an ${UserRole.Admin}.`;
         case UserRole.User:
-            return "You are a user.";
+            return `You are an ${UserRole.User}.`;
         case UserRole.Guest:
-            return "You are a guest.";
+            return `You are an ${UserRole.Guest}.`;
         default:
             return "Unknown role.";
     }

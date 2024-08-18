@@ -1,7 +1,7 @@
 declare enum Color {
-    Red = 0,
-    Green = 1,
-    Blue = 2
+    Red = "Red",
+    Green = "Green",
+    Blue = "Blue"
 }
 declare const getColor: (color: Color) => string;
 interface Car {
